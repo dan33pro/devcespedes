@@ -1,0 +1,92 @@
+@import 'vars';
+
+.Nav {
+    padding: 5px 15px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 90px;
+    display: grid;
+    grid-template-columns: 2fr 12fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    background: $--white;
+}
+
+.Nav .logo-container {
+    height: 100%;
+}
+
+.Nav .logo-container:hover {
+    filter: sepia(0.8);
+}
+
+.Nav .logo-container .upc-logo {
+    width: auto;
+    height: 80px;
+}
+
+// 2da parte del nav
+
+.Nav .menu-list {
+    display: flex;
+    gap: 4px;
+    list-style: none;
+    justify-self: end;
+}
+
+.Nav .menu-list .menu-item {
+    width: max-content;
+    padding: 5px 15px;
+    border-radius: 16px;
+}
+
+.Nav .menu-list .menu-item span {
+    width: max-content;
+    color: $--green;
+    font-size: $--menu_font_size;
+    font-weight: 700;
+    font-family: $--font_menu, 'Open Sans',Arial,sans-serif;
+}
+
+.Nav .menu-list .menu-item.sectionVisible,
+.Nav .menu-list .menu-item:hover {
+    background: $--green;
+}
+
+.Nav .menu-list .menu-item:last-child img {
+    width: auto;
+    height: calc($--menu_font_size / 1.5);
+    margin-left: 10px;
+}
+
+.Nav .menu-list .menu-item.sectionVisible span,
+.Nav .menu-list .menu-item:hover span {
+    color: $--white;
+}
+
+.Nav .menu-list .menu-item.sectionVisible img,
+.Nav .menu-list .menu-item:hover img {
+    filter: hue-rotate(0deg) saturate(0) brightness(100);
+}
+
+.Nav .menu-list .menu-item.inactive {
+    display: none;
+}
+
+// 3ra parte del NAV
+.Nav .menu-contact {
+    justify-self: center;
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.Nav .menu-contact li {
+    cursor: pointer;
+}
+
+.Nav .menu-contact li img {
+    width: auto;
+    height: $--menu_font_size;
+}
