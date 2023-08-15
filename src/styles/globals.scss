@@ -14,10 +14,15 @@ a {
   text-decoration: none;
 }
 
+button {
+  border: none;
+  background: none;
+}
+
 body {
   padding-top: 90px;
   width: 100vw;
-  background: $--dark-gray;
+  background: $--white;
   overflow-x: hidden;
 }
 

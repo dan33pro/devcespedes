@@ -49,7 +49,6 @@
     font-family: $--font_menu, 'Open Sans',Arial,sans-serif;
 }
 
-.Nav .menu-list .menu-item.sectionVisible,
 .Nav .menu-list .menu-item:hover {
     background: $--green;
 }
@@ -60,7 +59,6 @@
     margin-left: 10px;
 }
 
-.Nav .menu-list .menu-item.sectionVisible span,
 .Nav .menu-list .menu-item:hover span {
     color: $--white;
 }
