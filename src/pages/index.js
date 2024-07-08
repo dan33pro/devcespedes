@@ -1,3 +1,10 @@
+import Hero from '@components/Hero';
+import Interview from '@components/Interview';
+import ProfesionalProfile from '@components/ProfesionalProfile';
+import Certificaciones from '@containers/Certificaciones';
+import CV from '@containers/CV';
+import Education from '@containers/Education';
+import Skills from '@containers/Skills';
 import Head from 'next/head';
 
 export default function Home() {
@@ -9,6 +16,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Hero />
+      <Interview />
+      <Education />
+      <ProfesionalProfile />
+      <Skills />
+      <CV />
+      <Certificaciones />
     </>
   )
 }

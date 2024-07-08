@@ -11,6 +11,8 @@
     grid-template-rows: 1fr;
     align-items: center;
     background: $--white;
+    z-index: 3;
+    box-shadow: 4px 8px 16px $--light-gray;
 }
 
 .Nav .logo-container {
@@ -78,6 +80,11 @@
     display: flex;
     list-style: none;
     gap: 15px;
+
+    .branch {
+        font-size: $--font-size-md-sm;
+        margin: 0px 20px;
+    }
 }
 
 .Nav .menu-contact li {

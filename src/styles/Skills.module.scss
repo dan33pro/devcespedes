@@ -1,0 +1,34 @@
+@import 'vars';
+
+.Skills {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+    gap: 15px;
+
+    h2 {
+        padding: 40px;
+        font-size: $--font-size-bg-lt;
+        font-weight: lighter;
+        text-align: center;
+    }
+
+    .line-divide {
+        width: 50px;
+        height: 3px;
+        background: $--yellow;
+    }
+
+    .cards-container {
+        width: calc(100vw - 80px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 40px;
+        gap: 30px;
+    }
+}
