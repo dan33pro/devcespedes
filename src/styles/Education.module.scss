@@ -1,0 +1,32 @@
+@import 'vars';
+
+.Education {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+    gap: 15px;
+
+    h2 {
+        padding: 40px;
+        font-size: $--font-size-bg-lt;
+        font-weight: lighter;
+    }
+
+    .line-divide {
+        width: 50px;
+        height: 3px;
+        background: $--yellow;
+    }
+
+    .cards-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 40px;
+        gap: 30px;
+    }
+}

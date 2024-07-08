@@ -130,18 +130,18 @@ const Header = () => {
         <Image src={logoupc} alt="logo_upc" className={styles['upc-logo']} />
       </div>
       <ul className={styles['menu-list']} ref={navOptionsRef}>
-        {itemsList.map((item) => (
+        {/* {itemsList.map((item) => (
           <ItemNav infoItem={item} key={item.id + '-' + item.path} />
-        ))}
-        <li className={`${styles['menu-item']} ${!btnMasIsView ? styles['inactive'] : ''}`}>
+        ))} */}
+        {/* <li className={`${styles['menu-item']} ${!btnMasIsView ? styles['inactive'] : ''}`}>
           <button className={styles['link-item']} onClick={changeStateItem}>
             <span>MÁS</span>
             <Image src={iconArrow} alt="icono flecha" className={styles['icono-arrow']} />
           </button>
-        </li>
+        </li> */}
       </ul>
       <ul className={styles['menu-contact']}>
-        <li className={styles['item-contact']}>
+        {/* <li className={styles['item-contact']}>
           <Image src={iconmail} alt="icon-mail" className={styles['icon-mail']} />
         </li>
         <li className={styles['item-contact']}>
@@ -149,7 +149,8 @@ const Header = () => {
         </li>
         <li className={styles['item-contact']}>
           <Image src={iconcall} alt="icon-call" className={styles['icon-call']} />
-        </li>
+        </li> */}
+        <h2 className={styles['branch']}>devcespedesg</h2>
       </ul>
     </nav>
   );

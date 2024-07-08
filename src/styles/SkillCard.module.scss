@@ -1,0 +1,58 @@
+@import 'vars';
+
+.SkillCard {
+    width: 240px;
+    min-height: 240px;
+    height: auto;
+    padding: 40px 30px;
+    background: $--light-gray-ul;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    place-items: center;
+    border-radius: 20px;
+
+    .skill {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @keyframes fillBorder {
+            0% {
+                stroke-dasharray: 0 100;
+            }
+        }
+
+        .percentage-label {
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: $--font-size-md-sm-lg;
+            font-weight: 100;
+        }
+
+        svg {
+            transform: rotate(-90deg);
+
+            circle {
+                fill: none;
+                stroke: $--yellow;
+                stroke-width: 4;
+                stroke-dasharray: 0 100;
+                transition: stroke-dasharray 1s linear;
+            }
+        }
+    }
+
+    p {
+        text-align: center;
+        font-size: $--font-size-md-sm;
+        font-weight: bold;
+    }
+}

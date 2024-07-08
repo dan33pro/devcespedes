@@ -1,0 +1,105 @@
+@import 'vars';
+
+.Interview {
+    position: relative;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-columns: 1fr;
+
+    .container-interview {
+        grid-row: 1 / 3;
+        grid-column: 1;
+        width: 100vw;
+        display: flex;
+        gap: 80px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        z-index: 2;
+
+        .container-img-interview {
+            max-width: 550px;
+            width: 40vw;
+            height: 40vw;
+            border-top-right-radius: 60px;
+            border-bottom-left-radius: 60px;
+            box-shadow: 4px 8px 16px $--light-gray;
+            overflow: hidden;
+            background-image: url('../assets/images/madrid-photo.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .interview-info {
+            max-width: 550px;
+            width: 40vw;
+            display: grid;
+            grid-template-rows: 1fr 1fr auto;
+            align-items: center;
+            align-self: center;
+            gap: 10px;
+
+            h1 {
+                font-size: $--font-size-bg-lt;
+            }
+
+            .simple-border {
+                width: 100px;
+                height: 6px;
+                margin: 10px 0px;
+                background: $--yellow;
+            }
+
+            p {
+                height: min-content;
+                font-size: $--font-size-md-sm;
+            }
+        }
+    }
+
+    .fondo-gris {
+        position: absolute;
+        width: 100vw;
+        min-height: 40vw;
+        background: $--light-gray-ul;
+        grid-row: 2 / 5;
+        grid-column: 1;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 830px) {
+    .Interview {
+        padding: 40px;
+        background: $--light-gray-ul;
+
+        .container-interview {
+            width: calc(100vw - 80px);
+            display: grid;
+            grid-template-rows: 1fr auto;
+            gap: 40px;
+
+            .container-img-interview {
+                width: calc((90vw - 80px));
+            }
+
+            .interview-info {
+                width: calc((90vw - 80px));
+                place-items: center;
+
+                h1 {
+                    text-align: center;
+                }
+
+                p {
+                    text-align: justify;
+                }
+            }
+        }
+    }
+
+    .fondo-gris {
+        display: none;
+    }
+}
