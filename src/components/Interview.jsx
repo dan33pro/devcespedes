@@ -10,9 +10,16 @@ const Interview = () => {
                     <h1>SOBRE MI</h1>
                     <div className={styles['simple-border']}></div>
                     <p>
-                        Soy estudiante de ingeniería de sistemas a la espera del grado, apasionado por el desarrollo de software y la IA Generativa como medio para la automatización e innovación de procesos. Soy
-                        una persona altamente autodidacta, con bases firmes en las tecnologías del desarrollo web. Puedo adaptarme rápido a las diversas metodologías y frameworks ágiles, dispuesto a enfrentar
-                        nuevos retos y a estar en un proceso de constante aprendizaje.
+                        Ingeniero de Sistemas especializado en Ingeniería de Datos,
+                        AWS Cloud y Desarrollo de Software Full Stack, con
+                        experiencia en el diseño e implementación de arquitecturas
+                        de datos, procesos ETL, Data Lakes, Data Warehouses y
+                        soluciones serverless. Experiencia desarrollando
+                        aplicaciones web, APIs REST, microservicios e integrando
+                        modelos de Inteligencia Artificial Generativa (LLMs) para la
+                        automatización de procesos. Orientado a la construcción
+                        de soluciones escalables, de alto rendimiento y alineadas
+                        con las necesidades del negocio.
                     </p>
                 </article>
             </section>

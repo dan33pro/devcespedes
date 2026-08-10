@@ -56,3 +56,31 @@
         font-weight: bold;
     }
 }
+
+.SkillCard.white {
+    background:  $--light-gray-ul;
+
+    .skill {
+        .percentage-label {
+            color: $--black;
+        }
+    }
+
+    p {
+        color: $--black;
+    }
+}
+
+.SkillCard.black {
+    background: $--light-gray;
+
+    .skill {
+        .percentage-label {
+            color: $--white;
+        }
+    }
+    
+    p {
+        color: $--white;
+    }
+}

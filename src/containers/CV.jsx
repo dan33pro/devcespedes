@@ -1,6 +1,6 @@
 import React from 'react';
 
-import profile from '@images/profile-photo.png';
+import profile from '@images/profile-photo-v2.png';
 import CardDescription from 'common/CardDescription';
 
 import styles from '@styles/CV.module.scss';
@@ -12,7 +12,7 @@ const myCV = [
         alt: 'Imagen de perfil profesional',
         title: 'Hoja de Vida',
         description: '¡Haz click para ver mi Hoja de Vida',
-        url: 'https://www.canva.com/design/DAFVtmzfcpY/MRmoULOTilCJE5cY7M-vyA/view?utm_content=DAFVtmzfcpY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink'
+        url: 'https://canva.link/nv4e3ijx7g564l6'
     },
 ];
 

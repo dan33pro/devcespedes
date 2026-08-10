@@ -7,6 +7,99 @@ import Education from '@containers/Education';
 import Skills from '@containers/Skills';
 import Head from 'next/head';
 
+const softSkills = [
+  {
+    title: 'Pemsamiento Crítico',
+    percentage: 100,
+  }, {
+    title: 'Trabajo en Equipo',
+    percentage: 100,
+  }, {
+    title: 'Aprendizaje Continuo',
+    percentage: 100,
+  }
+];
+
+const cloudSkills = [
+  {
+    title: 'Lambda / EventBridge',
+    percentage: 90,
+  }, {
+    title: 'Glue / EMR / Athena ',
+    percentage: 90,
+  }, {
+    title: 'S3 / Redshift',
+    percentage: 90,
+  }, {
+    title: 'DynamoDB / ECS',
+    percentage: 80,
+  }, {
+    title: 'IAM / Lake Formation',
+    percentage: 90,
+  }, {
+    title: 'Step Functions / Airflow',
+    percentage: 90,
+  },
+];
+
+const backendSkills = [
+  {
+    title: 'Java / Spring Boot',
+    percentage: 90,
+  }, {
+    title: 'Node.js / Express.js',
+    percentage: 90,
+  }, {
+    title: 'SQL y Modelado de Datos',
+    percentage: 90,
+  }, {
+    title: 'APIs REST / Microservicios',
+    percentage: 80,
+  },
+];
+
+const frontendSkills = [
+  {
+    title: 'React / Next.js / Angular',
+    percentage: 90,
+  }, {
+    title: 'TypeScript / JavaScript',
+    percentage: 100,
+  }, {
+    title: 'HTML5 / Sass / Tailwind',
+    percentage: 90,
+  },
+];
+
+const bigDataSkills = [
+  {
+    title: 'ETL / Pipelines de Datos',
+    percentage: 80,
+  }, {
+    title: 'Spark / Scala / Python',
+    percentage: 80,
+  }, {
+    title: 'Data Lake / Data Warehouse',
+    percentage: 90,
+  }, {
+    title: 'Procesamiento Batch',
+    percentage: 80,
+  },
+];
+
+const aiSkills = [
+  {
+    title: 'AI-assisted development',
+    percentage: 80,
+  }, {
+    title: 'LLM Engineering',
+    percentage: 80,
+  }, {
+    title: 'RAG / AI Agents',
+    percentage: 80,
+  },
+];
+
 export default function Home() {
   return (
     <>
@@ -20,7 +113,12 @@ export default function Home() {
       <Interview />
       <Education />
       <ProfesionalProfile />
-      <Skills />
+      <Skills skills={softSkills} title='Habilidades Blandas' secondClassName='white' />
+      <Skills skills={cloudSkills} title='Habilidades Cloud Computing' secondClassName='black' />
+      <Skills skills={backendSkills} title='Habilidades Back-end' secondClassName='white' />
+      <Skills skills={frontendSkills} title='Habilidades Front-end' secondClassName='black' />
+      <Skills skills={bigDataSkills} title='Habilidades Big Data' secondClassName='white' />
+      <Skills skills={aiSkills} title='Habilidades con IA' secondClassName='black' />
       <CV />
       <Certificaciones />
     </>

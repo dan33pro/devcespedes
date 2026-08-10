@@ -23,7 +23,7 @@
         box-shadow: 4px 8px 16px $--light-gray;
 
         img {
-            width: 250px;
+            width: 200px;
             height: auto;
         }
     }
@@ -44,6 +44,7 @@
             height: 6px;
             margin: 10px 0px;
             background: $--yellow;
+            justify-self: center;
         }
 
         p {

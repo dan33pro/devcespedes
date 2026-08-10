@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import styles from '@styles/SkillCard.module.scss';
 
-const SkillCard = ({ percentage, title }) => {
+const SkillCard = ({ percentage, title, secondClassName }) => {
     const [dashArray, setDashArray] = useState('0 100');
 
     useEffect(() => {
@@ -14,7 +14,7 @@ const SkillCard = ({ percentage, title }) => {
     }, [percentage]);
 
     return (
-        <aside className={styles.SkillCard}>
+        <aside className={`${styles.SkillCard} ${styles[secondClassName]}`}>
             <div className={styles.skill}>
                 <svg width="100" height="100">
                     <circle

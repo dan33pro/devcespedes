@@ -32,3 +32,19 @@
         gap: 30px;
     }
 }
+
+.Skills.white {
+    background: $--white;
+
+    h2 {
+        color: $--black;
+    }
+}
+
+.Skills.black {
+    background: $--black;
+    
+    h2 {
+        color: $--white;
+    }
+}
