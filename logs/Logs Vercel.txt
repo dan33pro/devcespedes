@@ -1,0 +1,72 @@
+12:17:37.658 Running build in Washington, D.C., USA (East) – iad1
+12:17:37.659 Build machine configuration: 2 cores, 8 GB
+12:17:37.788 Cloning github.com/dan33pro/devcespedes (Branch: main, Commit: dfb226c)
+12:17:39.111 Cloning completed: 1.323s
+12:17:39.241 Skipping build cache since Node.js version changed from "20.x" to "24.x"
+12:17:39.490 Running "vercel build"
+12:17:39.507 Vercel CLI 58.1.0
+12:17:39.807 Installing dependencies...
+12:17:40.916 npm warn ERESOLVE overriding peer dependency
+12:17:40.917 npm warn While resolving: eslint-plugin-import@2.32.0
+12:17:40.918 npm warn Found: eslint@10.8.1
+12:17:40.918 npm warn node_modules/eslint
+12:17:40.919 npm warn   eslint@"10.8.1" from the root project
+12:17:40.919 npm warn   12 more (@eslint-community/eslint-utils, ...)
+12:17:40.920 npm warn
+12:17:40.921 npm warn Could not resolve dependency:
+12:17:40.921 npm warn peer eslint@"^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8 || ^9" from eslint-plugin-import@2.32.0
+12:17:40.921 npm warn node_modules/eslint-plugin-import
+12:17:40.921 npm warn   eslint-plugin-import@"^2.32.0" from eslint-config-next@16.3.1
+12:17:40.921 npm warn   node_modules/eslint-config-next
+12:17:40.921 npm warn   1 more (eslint-import-resolver-typescript)
+12:17:40.921 npm warn
+12:17:40.921 npm warn Conflicting peer dependency: eslint@9.39.5
+12:17:40.921 npm warn node_modules/eslint
+12:17:40.923 npm warn   peer eslint@"^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8 || ^9" from eslint-plugin-import@2.32.0
+12:17:40.924 npm warn   node_modules/eslint-plugin-import
+12:17:40.924 npm warn     eslint-plugin-import@"^2.32.0" from eslint-config-next@16.3.1
+12:17:40.924 npm warn     node_modules/eslint-config-next
+12:17:40.924 npm warn     1 more (eslint-import-resolver-typescript)
+12:17:40.974 npm error code ERESOLVE
+12:17:40.976 npm error ERESOLVE could not resolve
+12:17:40.976 npm error
+12:17:40.977 npm error While resolving: eslint-plugin-jsx-a11y@6.10.2
+12:17:40.978 npm error Found: eslint@10.8.1
+12:17:40.978 npm error node_modules/eslint
+12:17:40.978 npm error   eslint@"10.8.1" from the root project
+12:17:40.979 npm error   peer eslint@"^6.0.0 || ^7.0.0 || >=8.0.0" from @eslint-community/eslint-utils@4.10.1
+12:17:40.979 npm error   node_modules/@eslint-community/eslint-utils
+12:17:40.979 npm error     @eslint-community/eslint-utils@"^4.9.1" from @typescript-eslint/utils@8.67.0
+12:17:40.979 npm error     node_modules/@typescript-eslint/utils
+12:17:40.979 npm error       @typescript-eslint/utils@"8.67.0" from @typescript-eslint/eslint-plugin@8.67.0
+12:17:40.979 npm error       node_modules/@typescript-eslint/eslint-plugin
+12:17:40.979 npm error         @typescript-eslint/eslint-plugin@"8.67.0" from typescript-eslint@8.67.0
+12:17:40.979 npm error         node_modules/typescript-eslint
+12:17:40.979 npm error       2 more (@typescript-eslint/type-utils, typescript-eslint)
+12:17:40.979 npm error     @eslint-community/eslint-utils@"^4.8.0" from eslint@10.8.1
+12:17:40.979 npm error   11 more (@eslint-community/eslint-utils, ...)
+12:17:40.981 npm error
+12:17:40.981 npm error Could not resolve dependency:
+12:17:40.981 npm error peer eslint@"^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9" from eslint-plugin-jsx-a11y@6.10.2
+12:17:40.981 npm error node_modules/eslint-plugin-jsx-a11y
+12:17:40.982 npm error   eslint-plugin-jsx-a11y@"^6.10.2" from the root project
+12:17:40.982 npm error   eslint-plugin-jsx-a11y@"^6.10.0" from eslint-config-next@16.3.1
+12:17:40.982 npm error   node_modules/eslint-config-next
+12:17:40.982 npm error     eslint-config-next@"^16.3.1" from the root project
+12:17:40.982 npm error
+12:17:40.982 npm error Conflicting peer dependency: eslint@9.39.5
+12:17:40.982 npm error node_modules/eslint
+12:17:40.982 npm error   peer eslint@"^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9" from eslint-plugin-jsx-a11y@6.10.2
+12:17:40.982 npm error   node_modules/eslint-plugin-jsx-a11y
+12:17:40.982 npm error     eslint-plugin-jsx-a11y@"^6.10.2" from the root project
+12:17:40.982 npm error     eslint-plugin-jsx-a11y@"^6.10.0" from eslint-config-next@16.3.1
+12:17:40.982 npm error     node_modules/eslint-config-next
+12:17:40.982 npm error       eslint-config-next@"^16.3.1" from the root project
+12:17:40.982 npm error
+12:17:40.983 npm error Fix the upstream dependency conflict, or retry this command with --force or --legacy-peer-deps to accept an incorrect (and potentially broken) dependency resolution.
+12:17:40.983 npm error
+12:17:40.983 npm error
+12:17:40.983 npm error For a full report see:
+12:17:40.983 npm error /vercel/.npm/_logs/2026-08-17T17_17_40_102Z-eresolve-report.txt
+12:17:40.983 npm error A complete log of this run can be found in: /vercel/.npm/_logs/2026-08-17T17_17_40_102Z-debug-0.log
+12:17:41.025 Error: Command "npm install" exited with 1
