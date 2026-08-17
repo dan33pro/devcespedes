@@ -1,4 +1,4 @@
-@import 'vars';
+@use './vars' as *;
 
 .CardDescription {
     padding: 20px;
@@ -11,9 +11,9 @@
     justify-content: center;
     gap: 20px;
     border-radius: 4px;
-    border: 1px solid $--light-gray;
-    box-shadow: 0px 3px 0px $--yellow;
-    color: $--black;
+    border: 1px solid $light-gray;
+    box-shadow: 0px 3px 0px $yellow;
+    color: $black;
 
     .container-img {
         width: 170px;
@@ -37,21 +37,21 @@
 
         h3 {
             text-align: center;
-            font-size: $--font-size-md-sm-lg;
+            font-size: $font-size-md-sm-lg;
             font-weight: bold;
         }
 
         p {
             text-align: center;
-            font-size: $--font-size-md-sm;
+            font-size: $font-size-md-sm;
         }
     }
 }
 
 .CardDescription.primary {
-    background: $--light-gray-ul;
+    background: $light-gray-ul;
 }
 
 .CardDescription.secundary {
-    background: $--white;
+    background: $white;
 }

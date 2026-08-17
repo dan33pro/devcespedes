@@ -1,4 +1,4 @@
-@import 'vars';
+@use './vars' as *;
 
 .ProfesionalProfile {
     padding: 40px;
@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background: $--light-gray-ul;
+    background: $light-gray-ul;
     gap: 40px;
 
     .info-profile {
@@ -25,19 +25,19 @@
 
             h3 {
                 text-align: center;
-                font-size: $--font-size-bg;
+                font-size: $font-size-bg;
             }
 
             .simple-border {
                 width: 100px;
                 height: 6px;
                 margin: 10px 0px;
-                background: $--yellow;
+                background: $yellow;
             }
 
             p {
                 height: min-content;
-                font-size: $--font-size-md-sm;
+                font-size: $font-size-md-sm;
             }
         }
 
@@ -48,12 +48,12 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 1px solid $--yellow;
+            border: 1px solid $yellow;
             gap: 10px;
 
             span {
-                color: $--yellow;
-                font-size: $--font-size-sm;
+                color: $yellow;
+                font-size: $font-size-sm;
             }
         }
     }

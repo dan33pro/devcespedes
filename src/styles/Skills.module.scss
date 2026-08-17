@@ -1,4 +1,4 @@
-@import 'vars';
+@use './vars' as *;
 
 .Skills {
     width: 100vw;
@@ -11,7 +11,7 @@
 
     h2 {
         padding: 40px;
-        font-size: $--font-size-bg-lt;
+        font-size: $font-size-bg-lt;
         font-weight: lighter;
         text-align: center;
     }
@@ -19,7 +19,7 @@
     .line-divide {
         width: 50px;
         height: 3px;
-        background: $--yellow;
+        background: $yellow;
     }
 
     .cards-container {
@@ -34,17 +34,17 @@
 }
 
 .Skills.white {
-    background: $--white;
+    background: $white;
 
     h2 {
-        color: $--black;
+        color: $black;
     }
 }
 
 .Skills.black {
-    background: $--black;
+    background: $black;
     
     h2 {
-        color: $--white;
+        color: $white;
     }
 }

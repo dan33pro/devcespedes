@@ -1,4 +1,4 @@
-@import 'vars';
+@use './vars' as *;
 
 .Education {
     width: 100vw;
@@ -11,14 +11,14 @@
 
     h2 {
         padding: 40px;
-        font-size: $--font-size-bg-lt;
+        font-size: $font-size-bg-lt;
         font-weight: lighter;
     }
 
     .line-divide {
         width: 50px;
         height: 3px;
-        background: $--yellow;
+        background: $yellow;
     }
 
     .cards-container {

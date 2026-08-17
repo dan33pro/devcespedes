@@ -1,4 +1,4 @@
-@import 'vars';
+@use './vars' as *;
 
 .Nav {
     padding: 5px 15px;
@@ -10,9 +10,9 @@
     grid-template-columns: 2fr 12fr 1fr;
     grid-template-rows: 1fr;
     align-items: center;
-    background: $--white;
+    background: $white;
     z-index: 3;
-    box-shadow: 4px 8px 16px $--light-gray;
+    box-shadow: 4px 8px 16px $light-gray;
 }
 
 .Nav .logo-container {
@@ -45,24 +45,24 @@
 
 .Nav .menu-list .menu-item span {
     width: max-content;
-    color: $--green;
-    font-size: $--menu_font_size;
+    color: $green;
+    font-size: $menu_font_size;
     font-weight: 700;
-    font-family: $--font_menu, 'Open Sans',Arial,sans-serif;
+    font-family: $font_menu, 'Open Sans',Arial,sans-serif;
 }
 
 .Nav .menu-list .menu-item:hover {
-    background: $--green;
+    background: $green;
 }
 
 .Nav .menu-list .menu-item:last-child img {
     width: auto;
-    height: calc($--menu_font_size / 1.5);
+    height: calc($menu_font_size / 1.5);
     margin-left: 10px;
 }
 
 .Nav .menu-list .menu-item:hover span {
-    color: $--white;
+    color: $white;
 }
 
 .Nav .menu-list .menu-item.sectionVisible img,
@@ -82,7 +82,7 @@
     gap: 15px;
 
     .branch {
-        font-size: $--font-size-md-sm;
+        font-size: $font-size-md-sm;
         margin: 0px 20px;
     }
 }
@@ -93,5 +93,5 @@
 
 .Nav .menu-contact li img {
     width: auto;
-    height: $--menu_font_size;
+    height: $menu_font_size;
 }

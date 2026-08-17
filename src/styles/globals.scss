@@ -1,4 +1,4 @@
-@import 'vars';
+@use './vars' as *;
 
 * {
   margin: 0;
@@ -22,7 +22,7 @@ button {
 body {
   padding-top: 90px;
   width: 100vw;
-  background: $--white;
+  background: $white;
   overflow-x: hidden;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
@@ -44,8 +44,8 @@ body::-webkit-scrollbar:horizontal {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: $--gray;
-  border: 2px solid $--dark-gray;
+  background-color: $gray;
+  border: 2px solid $dark-gray;
   border-radius: 20px;
 }
 

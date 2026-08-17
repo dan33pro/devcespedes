@@ -1,4 +1,4 @@
-@import 'vars';
+@use './vars' as *;
 
 .menu-item {
     width: max-content;
@@ -8,20 +8,20 @@
 
 .menu-item span {
     width: max-content;
-    color: $--green;
-    font-size: $--menu_font_size;
+    color: $green;
+    font-size: $menu_font_size;
     font-weight: 700;
-    font-family: $--font_menu, 'Open Sans',Arial,sans-serif;
+    font-family: $font_menu, 'Open Sans',Arial,sans-serif;
 }
 
 .menu-item.sectionVisible,
 .menu-item:hover {
-    background: $--green;
+    background: $green;
 }
 
 .menu-item.sectionVisible span,
 .menu-item:hover span {
-    color: $--white;
+    color: $white;
 }
 
 .menu-item.inactive {

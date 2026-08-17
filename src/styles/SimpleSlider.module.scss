@@ -1,4 +1,4 @@
-@import 'vars';
+@use './vars' as *;
 
 .SimpleSlider {
     position: relative;
@@ -50,7 +50,7 @@
 
             svg {
                 .arrow {
-                    fill: $--white;
+                    fill: $white;
                 }
             }
         }

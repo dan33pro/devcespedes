@@ -1,11 +1,11 @@
-@import 'vars';
+@use './vars' as *;
 
 .SkillCard {
     width: 240px;
     min-height: 240px;
     height: auto;
     padding: 40px 30px;
-    background: $--light-gray-ul;
+    background: $light-gray-ul;
     display: grid;
     grid-template-rows: auto 1fr;
     place-items: center;
@@ -33,7 +33,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: $--font-size-md-sm-lg;
+            font-size: $font-size-md-sm-lg;
             font-weight: 100;
         }
 
@@ -42,7 +42,7 @@
 
             circle {
                 fill: none;
-                stroke: $--yellow;
+                stroke: $yellow;
                 stroke-width: 4;
                 stroke-dasharray: 0 100;
                 transition: stroke-dasharray 1s linear;
@@ -52,35 +52,35 @@
 
     p {
         text-align: center;
-        font-size: $--font-size-md-sm;
+        font-size: $font-size-md-sm;
         font-weight: bold;
     }
 }
 
 .SkillCard.white {
-    background:  $--light-gray-ul;
+    background:  $light-gray-ul;
 
     .skill {
         .percentage-label {
-            color: $--black;
+            color: $black;
         }
     }
 
     p {
-        color: $--black;
+        color: $black;
     }
 }
 
 .SkillCard.black {
-    background: $--light-gray;
+    background: $light-gray;
 
     .skill {
         .percentage-label {
-            color: $--white;
+            color: $white;
         }
     }
     
     p {
-        color: $--white;
+        color: $white;
     }
 }

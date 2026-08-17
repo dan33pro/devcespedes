@@ -1,4 +1,4 @@
-@import 'vars';
+@use './vars' as *;
 
 .Interview {
     position: relative;
@@ -24,7 +24,7 @@
             height: 40vw;
             border-top-right-radius: 60px;
             border-bottom-left-radius: 60px;
-            box-shadow: 4px 8px 16px $--light-gray;
+            box-shadow: 4px 8px 16px $light-gray;
             overflow: hidden;
             background-image: url('../assets/images/madrid-photo.jpg');
             background-size: cover;
@@ -41,19 +41,19 @@
             gap: 10px;
 
             h1 {
-                font-size: $--font-size-bg-lt;
+                font-size: $font-size-bg-lt;
             }
 
             .simple-border {
                 width: 100px;
                 height: 6px;
                 margin: 10px 0px;
-                background: $--yellow;
+                background: $yellow;
             }
 
             p {
                 height: min-content;
-                font-size: $--font-size-md-sm;
+                font-size: $font-size-md-sm;
             }
         }
     }
@@ -62,7 +62,7 @@
         position: absolute;
         width: 100vw;
         min-height: 40vw;
-        background: $--light-gray-ul;
+        background: $light-gray-ul;
         grid-row: 2 / 5;
         grid-column: 1;
         z-index: 1;
@@ -72,7 +72,7 @@
 @media (max-width: 830px) {
     .Interview {
         padding: 40px;
-        background: $--light-gray-ul;
+        background: $light-gray-ul;
 
         .container-interview {
             width: calc(100vw - 80px);
